@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1E252E;
+    background-color:#0C2D48;
     font-family: 'Tangerine', serif;
   }
 .item1{
@@ -10,7 +10,7 @@
   direction: inherit;
   text-align: center;
   margin: 35px;
-  color: aliceblue;
+  color: #D4F1F4;
   font-size: 40px;
 }
 .item2{
@@ -43,7 +43,7 @@
   }
 
 .item2 h2{
-  color: aliceblue;
+  color:  #D4F1F4;
   font-size: 25px;
 }
 
@@ -56,12 +56,22 @@
 
 .item3 h2{
   font-size: 45px;
-  color: aliceblue;
+  color:  #D4F1F4;
+}
+
+.result{
+  color: #D4F1F4;
+  font-size: 45px;
+  text-align: center;
 }
 
 table{
   width: 250px;
   text-align: center;
   font-size: 50px;
-  color: aliceblue;
+  color:  #D4F1F4;
 }
+
+
+
+
