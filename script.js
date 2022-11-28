@@ -42,16 +42,13 @@ function message() {
     if (endGame()) {
         if (user_score > comp_score) {
             result.innerHTML = "You won! \n Get your Potion!!!";
-            document.getElementById("rock").style.pointerEvents = "none";
-            document.getElementById("paper").style.pointerEvents = "none";
-            document.getElementById("scissors").style.pointerEvents = "none";
         }
         else {
             result.innerHTML = "Witch won";
-            document.getElementById("rock").style.pointerEvents = "none";
+        }
+        document.getElementById("rock").style.pointerEvents = "none";
             document.getElementById("paper").style.pointerEvents = "none";
             document.getElementById("scissors").style.pointerEvents = "none";
-        }
     }
 }
 
