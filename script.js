@@ -12,9 +12,6 @@ scissors.addEventListener("click", () => playRound("scissors"));
 
 let user_score = 0, comp_score = 0;
 
-function endGame() {
-    return (user_score === 5 || comp_score === 5);
-}
 function getComputerChoice() {
     const options = ["rock", "paper", "scissors"];
     let index = Math.floor(Math.random() * options.length);
@@ -39,7 +36,7 @@ function playRound(playerSelection) {
     message();
 }
 function message() {
-    if (endGame()) {
+    if (user_score === 5 || comp_score === 5) {
         if (user_score > comp_score) {
             result.innerHTML = "You won! \n Get your Potion!!!";
         }
@@ -47,8 +44,8 @@ function message() {
             result.innerHTML = "Witch won";
         }
         document.getElementById("rock").style.pointerEvents = "none";
-            document.getElementById("paper").style.pointerEvents = "none";
-            document.getElementById("scissors").style.pointerEvents = "none";
+        document.getElementById("paper").style.pointerEvents = "none";
+        document.getElementById("scissors").style.pointerEvents = "none";
     }
 }
 
